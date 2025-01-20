@@ -1,8 +1,8 @@
-/* General Reset for Navbar */
+/* General Reset */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Navbar Container */
@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 15px 30px;
   background-color: #ffffff;
   border-bottom: 2px solid #eee;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -25,78 +25,117 @@
   height: auto;
 }
 
+/* Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
 /* Navbar Links */
 .navbar-links {
   display: flex;
-  gap: 30px;
   list-style: none;
+  gap: 30px;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
   margin: 0;
-  padding: 0;
 }
 
 .navbar-item {
   font-size: 18px;
   font-weight: 500;
-  color: #333;
+  color: #000;
   text-transform: uppercase;
   cursor: pointer;
-  transition: color 0.3s ease-in-out;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
 }
 
 .navbar-item:hover {
-  color: #6666;
+  color: #999999;
 }
 
 /* Contact Button */
 .contact-button {
-  padding: 12px 25px;
-  font-size: 16px;
+  padding: 8px 20px;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: #ffffff;
-  background-color: #555;
+  color: #fff;
+  background: #000;
+  text-decoration: none;
   border: none;
-  border-radius: 25px;
+  border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .contact-button:hover {
-  background-color: #8888;
+  background: #444;
   transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Menu */
+.navbar-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.navbar-links.active .navbar-item {
+  padding: 10px 20px;
+  text-align: center;
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .navbar-container {
-    padding: 20px 30px;
+@media (max-width: 768px) {
+  /* Mobile Menu Icon */
+  .menu-icon {
+    display: block;
   }
 
+  /* Hide Navbar Links by Default */
   .navbar-links {
-    gap: 20px;
+    display: none;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
   }
 
+  /* Show Active Navbar Links */
+  .navbar-links.active {
+    display: flex;
+    max-height: 300px;
+    opacity: 1;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    background-color: #999999;
+  }
+
+  /* Hide Contact Button */
   .contact-button {
-    font-size: 14px;
-    padding: 10px 20px;
+    display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  /* Adjust Logo Size */
+  .logo img {
+    width: 100px;
+  }
+
   .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #fafafa;
+    padding: 10px 20px;
   }
 
-  .navbar-links {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
-  }
-
-  .contact-button {
-    width: 100%;
-    margin-top: 20px;
+  .navbar-links.active .navbar-item {
+    font-size: 16px;
   }
 }

@@ -14,7 +14,7 @@ function Hero() {
           with every sip. Let each cup bring you closer to the harmony of
           Prayag.
         </p>
-        <button className="hero-button">Learn More</button>
+        <button className="hero-button">Shop Know</button>
       </div>
 
       {/* Right Side: Image */}
