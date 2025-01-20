@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap");
+
+.hero {
+  display: flex;
+  background-image: url("../../assets/images/bacground.png");
+  background-size: cover; /* Ensures the background image covers the entire section */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  justify-content: space-between;
+  height: 90vh;
+  align-items: center;
+  padding: 10px;
+  color: #2a295c;
+  font-family: "Roboto", sans-serif; /* Clean and modern font for readability */
+}
+
+.herocontents {
+  max-width: 50%;
+  padding-left: 50px;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif; /* Elegant serif font for titles */
+  font-size: 8rem; /* Adjusted for better balance */
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: black; /* Earthy tea-themed color */
+}
+
+.hero-subtitle {
+  font-family: "Roboto", sans-serif; /* Modern sans-serif for contrast */
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #ffff;
+}
+
+.hero-button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2a295c;
+  background-color: #ffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-button:hover {
+  background-color: #3a2303;
+  transform: scale(1.05);
+}
+
+.hero-image img {
+  position: relative;
+  bottom: 50px;
+  right: 130px;
+  width: 650px;
+}
