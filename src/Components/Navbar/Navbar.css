@@ -1,62 +1,102 @@
+/* General Reset for Navbar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* Navbar Container */
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #ddd;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 /* Logo */
 .logo img {
-  width: 100px;
+  width: 120px;
   height: auto;
 }
 
 /* Navbar Links */
 .navbar-links {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .navbar-item {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
   color: #333;
+  text-transform: uppercase;
   cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-item:hover {
+  color: #6666;
 }
 
 /* Contact Button */
 .contact-button {
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 16px;
-  color: #fff;
-  background-color: #007bff;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #555;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .contact-button:hover {
-  background-color: #0056b3;
+  background-color: #8888;
+  transform: translateY(-3px);
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 20px 30px;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+
+  .contact-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
     align-items: flex-start;
+    padding: 20px;
+    background-color: #fafafa;
   }
 
   .navbar-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 15px;
   }
 
   .contact-button {
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 20px;
   }
 }

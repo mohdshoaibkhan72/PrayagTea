@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/images/prayagLogo1.jpg";
+
 function Navbar() {
   const navLinks = ["Home", "Products", "About", "Contact"];
 
