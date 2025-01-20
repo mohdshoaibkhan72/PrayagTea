@@ -1,6 +1,7 @@
 import "./Hero.css";
 import img from "../../assets/images/bcpng.png";
 import img2 from "../../assets/images/prayagteaproduct.png";
+import resimg from "../../assets/images/resbck.png";
 
 function Hero() {
   return (
@@ -15,6 +16,11 @@ function Hero() {
           Prayag.
         </p>
         <button className="hero-button">Shop Know</button>
+      </div>
+
+      {/* Responsive: Single Image for Small Screens */}
+      <div className="hero-responsive-image">
+        <img src={resimg} alt="Responsive Background" />
       </div>
 
       {/* Right Side: Image */}
