@@ -1,0 +1,82 @@
+/* Import the font */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* About Us Section */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #194a33; /* Fallback background color */
+  color: white;
+  background-image: url(../../assets/images/pngleaf.png);
+  background-size: cover;
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition of the image */
+  position: relative; /* Enables the use of a pseudo-element for the overlay */
+}
+
+/* Overlay for opacity */
+.about-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 74, 51, 0.7); /* Semi-transparent dark overlay */
+  z-index: 1; /* Stacks the overlay above the background */
+}
+
+/* Content inside .about-container */
+.about-section {
+  position: relative; /* Ensures content stays above the overlay */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px 20px;
+  max-width: 700px;
+  width: 90%;
+}
+
+.about-text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #76a649;
+  font-weight: 600; /* Semi-bold weight for emphasis */
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffff;
+  font-weight: 700; /* Bold for strong impact */
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #ffff;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-weight: 400; /* Regular weight for readability */
+}
+
+.learn-more-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #194a33;
+  border: 2px solid #76a649;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.learn-more-button:hover {
+  background-color: #76a649;
+}
