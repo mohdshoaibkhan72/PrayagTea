@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./PrayagchaiDetails.css";
 import prayagchai1 from "../../assets/images/Prayagchai/prayagteap1.png";
-import prayagchai2 from "../../assets/images/Prayagchai/prayagteap3.png";
-import prayagchai3 from "../../assets/images/Prayagchai/prayagteaproduct.png";
+import prayagchai2 from "../../assets/images/Prayagchai/prayagteap2.jpg";
+import prayagchai3 from "../../assets/images/Prayagchai/prayagteap4.jpg";
 import leaf1 from "../../assets/images/png/leaf1.png";
 import leaf2 from "../../assets/images/png/leaf2.png";
 
@@ -72,7 +72,7 @@ const PrayagchaiDetails = () => {
 
         {/* Description Section */}
         <div className="prayagchai-description">
-          <h1>Prayagchai: A Cup of Serenity</h1>
+          <h1>Prayagchai: Har Ghoot Me Sangum</h1>
           <p className="intro-text">
             Discover the perfect blend of tradition, flavor, and comfort in
             every sip.

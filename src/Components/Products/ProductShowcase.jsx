@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ProductShowcase.css";
 import product1 from "../../assets/images/Prayagchai/prayagteap1.png";
 import hover1 from "../../assets/images/hover1.jpg";
-import product2 from "../../assets/images/ilachipraygtea.png";
+import product2 from "../../assets/images/Prayagilachi/ilachipng.png";
 import hover2 from "../../assets/images/hover2.jpg";
 
 const ProductShowcase = () => {
