@@ -1,6 +1,6 @@
 import "./Hero.css";
 import img from "../../assets/images/bcpng.png";
-import img2 from "../../assets/images/prayagteaproduct.png";
+import img2 from "../../assets/images/Prayagchai/prayagteaproduct.png";
 import resimg from "../../assets/images/resbck.png";
 
 function Hero() {
