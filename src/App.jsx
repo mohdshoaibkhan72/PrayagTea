@@ -6,6 +6,8 @@ import ProductShowcase from "./Components/Products/ProductShowcase";
 import Banner from "./Components/Bannerpage/Banner";
 import PrayagchaiDetails from "./Components/Prayagchai/PrayagchaiDetails";
 import Prayagilaci from "./Components/prayagilachi/prayiagilachi";
+import WhyChooseUs from "./Components/Whychoseus/Whychoseus";
+import Videos from "./Components/videos/Videos";
 function App() {
   return (
     <>
@@ -16,6 +18,8 @@ function App() {
       <PrayagchaiDetails></PrayagchaiDetails>
       <Banner></Banner>
       <Prayagilaci></Prayagilaci>
+      <WhyChooseUs></WhyChooseUs>
+      <Videos></Videos>
     </>
   );
 }

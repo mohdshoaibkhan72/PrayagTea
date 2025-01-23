@@ -11,7 +11,7 @@ body {
   align-items: center;
   background-color: #194a33; /* Fallback background color */
   color: white;
-  background-image: url(../../assets/images/pngleaf.png);
+  background-image: url(../../assets/images/png/pngleaf.png);
   background-size: cover;
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repetition of the image */

@@ -1,0 +1,122 @@
+/* Whychoseus.css */
+
+/* General Styling */
+.why-choose-us-container {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  color: black;
+}
+
+.why-choose-us-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/png/pngleaf.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/* Section Title */
+.section-title {
+  font-family: "Arial", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #76a649;
+  margin-bottom: 30px;
+  animation: zoomInOut 3s ease-in-out infinite;
+  /* Responsive adjustments for section title */
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Containers */
+.sections-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .sections-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Section Cards */
+.section-card {
+  background-color: #f5f5f5;
+  color: black;
+  opacity: 0.9;
+  font-weight: 550;
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.section-card:hover {
+  cursor: pointer;
+}
+
+/* Headings */
+.section-heading {
+  font-size: 1.8rem;
+  color: #76a649;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.6rem; /* Slightly reduce size for smaller screens */
+  }
+}
+
+/* Feature List */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .section-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-card {
+    width: 100%;
+  }
+}
