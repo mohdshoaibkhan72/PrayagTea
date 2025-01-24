@@ -8,6 +8,7 @@ import PrayagchaiDetails from "./Components/Prayagchai/PrayagchaiDetails";
 import Prayagilaci from "./Components/prayagilachi/prayiagilachi";
 import WhyChooseUs from "./Components/Whychoseus/Whychoseus";
 import Videos from "./Components/videos/Videos";
+import CustomerReviews from "./Components/CustomorReviews/CustomerReviews";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
       <Prayagilaci></Prayagilaci>
       <WhyChooseUs></WhyChooseUs>
       <Videos></Videos>
+      <CustomerReviews></CustomerReviews>
     </>
   );
 }

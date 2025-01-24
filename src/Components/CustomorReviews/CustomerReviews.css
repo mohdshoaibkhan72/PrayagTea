@@ -1,0 +1,170 @@
+/* Slider Container */
+.slider-container {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url("../../assets/images/whiteleafback.jpg");
+
+  background-position: center;
+}
+
+/* Heading Styles */
+.slider-container h1 {
+  font-weight: 550;
+  font-size: 2.5rem;
+  color: #76a649;
+  margin-bottom: 20px;
+}
+
+/* Slider Section */
+.slider {
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
+  position: relative;
+}
+
+/* Slider Track */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Slider Card */
+.slider-card {
+  background-color: #fff;
+  flex: 0 0 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 3s;
+}
+
+/* Cup Icon Style */
+.cup-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cup-icon img {
+  width: 100px;
+  height: 100px;
+  transition: 1s;
+}
+
+/* Hover effect on the cup icon */
+.cup-icon:hover {
+  background-color: #76a649;
+  border-radius: 50%;
+  color: white;
+}
+
+/* Stars Rating */
+.stars {
+  font-size: 1.5rem;
+  color: gold;
+  margin-bottom: 10px;
+}
+
+/* Review Text */
+.slider-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0 auto;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+/* Customer Name */
+.customer-name {
+  color: #76a649;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Slider Buttons (Left & Right) */
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Button Styles */
+.slider-button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  border: 2px solid #76a649;
+  border-radius: 50%;
+  color: black;
+  transition: background-color 0.8s, color 0.8s;
+  cursor: pointer;
+  z-index: 1; /* Ensures buttons stay on top */
+}
+
+/* Button Hover Effects */
+.slider-button:hover {
+  background-color: #76a649;
+  color: white;
+}
+
+/* Button Active Effect */
+.slider-button:active {
+  background-color: #003f7f;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+  .slider-container h1 {
+    font-size: 2rem;
+  }
+
+  .slider-card {
+    padding: 15px;
+  }
+
+  .slider-text {
+    font-size: 1rem;
+    max-width: 350px;
+  }
+
+  .slider-button {
+    height: 50px;
+    width: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .slider-text {
+    font-size: 0.9rem;
+    max-width: 300px;
+  }
+
+  .slider-button {
+    height: 45px;
+    width: 45px;
+    font-size: 1rem;
+  }
+}
