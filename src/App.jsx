@@ -9,6 +9,7 @@ import Prayagilaci from "./Components/prayagilachi/prayiagilachi";
 import WhyChooseUs from "./Components/Whychoseus/Whychoseus";
 import Videos from "./Components/videos/Videos";
 import CustomerReviews from "./Components/CustomorReviews/CustomerReviews";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
       <WhyChooseUs></WhyChooseUs>
       <Videos></Videos>
       <CustomerReviews></CustomerReviews>
+      <Footer></Footer>
     </>
   );
 }

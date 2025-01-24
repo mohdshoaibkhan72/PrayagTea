@@ -1,0 +1,223 @@
+/* Footer Container */
+.footer {
+  background-color: white;
+  color: black;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-evenly; /* Evenly space out the sections */
+  flex-wrap: wrap; /* Allow wrapping of sections on smaller screens */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Footer Section */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+/* Footer Heading */
+.footer-heading {
+  color: #4caf50;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px; /* Adding space for the symbol */
+}
+
+.footer-links li::before {
+  content: ">";
+  position: absolute;
+  left: 0; /* Adjust the position of the symbol */
+  top: 0;
+  color: #4caf50; /* Green color for the ">" symbol */
+  font-size: 18px;
+  line-height: 18px; /* Adjust the line height to center the symbol vertically */
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #4caf50;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #4caf50;
+}
+
+/* For devices with width above 1024px (Desktop and large screens) */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 40px 50px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    min-width: 250px;
+  }
+
+  .footer-logo {
+    max-width: 150px;
+  }
+
+  .footer-heading {
+    font-size: 18px;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+  }
+}
+
+/* For tablets and medium-sized devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure the sections can wrap */
+  }
+
+  .footer-section {
+    flex: 1 1 45%; /* Make sections take 45% of the container's width */
+    min-width: 220px;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo {
+    max-width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .footer-heading {
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+}
+
+/* For smaller devices (mobiles, max-width: 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+  .paymnt img {
+    width: 100%;
+  }
+  .Copyright p {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically */
+    justify-content: space-between; /* Ensure sections stay in a row */
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .footer-section {
+    flex: 1 1 100%; /* Take full width of the container on small screens */
+    min-width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    max-width: 100px;
+    margin-bottom: 8px;
+  }
+
+  .footer-heading {
+    font-size: 14px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+  }
+
+  /* Adjust the position and font size of ">" symbol on mobile */
+  .footer-links li {
+    padding-left: 10px;
+  }
+
+  .footer-links li::before {
+    font-size: 16px; /* Slightly smaller ">" on mobile */
+  }
+}
+.paymnt {
+  padding: 20px;
+  width: 95%;
+  margin: auto;
+  background-color: #f6f6f6;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.Copyright {
+  height: 50px;
+  width: 100%;
+  background-color: azure;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.prg {
+  cursor: pointer;
+}
+.prg :hover {
+  color: #4caf50;
+  cursor: pointer;
+}
