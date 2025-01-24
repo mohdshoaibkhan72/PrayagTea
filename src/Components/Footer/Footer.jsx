@@ -61,14 +61,13 @@ const Footer = () => {
           {/* Contact Section */}
           <div className="footer-section">
             <h3 className="footer-heading">Get in Touch</h3>
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+            <p>phulpur prayagraj 212402 Uttar pradesh</p>
             <p>
-              Email:{" "}
-              <a href="mailto:support@example.com">support@example.com</a>
+              Email: <a href="prayagtea873@gmail.com">prayagtea873@gmail.com</a>
             </p>
             <p>
-              Need help? Call us:{" "}
-              <a href="tel:+14065550120">+ (406) 555-0120</a>
+              Need help? Call us:
+              <a href="tel:+14065550120">(+91) 9956875067</a>
             </p>
           </div>
         </div>

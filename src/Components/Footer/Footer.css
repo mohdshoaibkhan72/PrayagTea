@@ -213,7 +213,10 @@ footer a:hover {
   text-align: center;
   padding: 20px;
 }
-
+.Copyright a {
+  color: #4caf50;
+  font-weight: 550;
+}
 .prg {
   cursor: pointer;
 }

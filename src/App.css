@@ -2,3 +2,8 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+/* Style for selected text */
+::selection {
+  background-color: green;
+  color: white;
+}
