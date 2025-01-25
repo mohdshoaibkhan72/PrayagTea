@@ -36,21 +36,23 @@ const ProductDetails = () => {
       </div>
 
       {/* Product Details Section */}
-      <div className="product-details">
-        <h1>The Perfect Tea Experience</h1>
-        <section className="cart-items">
+      <div className="product-details-section">
+        <h1 className="product-heading">The Perfect Tea Experience</h1>
+        <section className="product-cart-items">
           {products.map((product, index) => (
-            <div key={index} className="cart-item">
+            <div key={index} className="product-cart-item">
               <img
                 src={product.img}
                 alt={product.title}
-                className="cart-item-image"
+                className="product-cart-item-image"
               />
-              <div className="cart-item-info">
-                <h2 className="cart-item-title">{product.title}</h2>
-                <p className="cart-item-description">{product.description}</p>
-                <p className="cart-item-price">{product.price}</p>
-                <p className="cart-item-weight">{product.weight}</p>
+              <div className="product-cart-item-info">
+                <h2 className="product-cart-item-title">{product.title}</h2>
+                <p className="product-cart-item-description">
+                  {product.description}
+                </p>
+                <p className="product-cart-item-price">{product.price}</p>
+                <p className="product-cart-item-weight">{product.weight}</p>
               </div>
             </div>
           ))}
