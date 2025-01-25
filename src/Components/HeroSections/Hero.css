@@ -128,7 +128,6 @@ html,
   height: auto;
   object-fit: cover;
 }
-
 /* Slide-in Animations */
 @keyframes slideInFromLeft {
   0% {
@@ -165,7 +164,6 @@ html,
     left: 0;
   }
 }
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .hero {

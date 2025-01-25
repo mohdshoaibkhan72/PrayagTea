@@ -5,7 +5,7 @@ function Aboutus() {
   return (
     <div className="about-container">
       {/* About Us Section */}
-      <div className="about-section">
+      <div className="about-section" data-aos="fade-up">
         <div className="about-text">
           <h1>About Us</h1>
           <h2>Welcome to Our Tea Store</h2>

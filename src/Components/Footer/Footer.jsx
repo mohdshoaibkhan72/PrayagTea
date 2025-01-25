@@ -47,7 +47,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" data-aos="fade-up">
         <div className="footer-container">
           <div className="footer-section">
             <img src={logo} alt="Company Logo" className="footer-logo" />

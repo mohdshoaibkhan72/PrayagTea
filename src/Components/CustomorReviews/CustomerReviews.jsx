@@ -95,7 +95,7 @@ const CustomerReviews = () => {
   };
 
   return (
-    <div className="slider-container">
+    <div className="slider-container" data-aos="fade-up">
       <h1>Customer Reviews</h1>
       <div className="slider">
         <div

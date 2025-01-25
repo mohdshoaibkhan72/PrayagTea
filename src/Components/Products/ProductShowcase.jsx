@@ -26,7 +26,7 @@ const ProductShowcase = () => {
   ];
 
   return (
-    <div className="product-container">
+    <div className="product-container" data-aos="fade-up">
       <div className="left">
         <h1>Explore Our Seasonal Favourites</h1>
         <a href="#">View All Products</a>

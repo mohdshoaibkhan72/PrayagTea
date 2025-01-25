@@ -1,9 +1,27 @@
+import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import img from "../../assets/images/bcpng.png";
-import img2 from "../../assets/images/Prayagchai/prayagteaproduct.png";
+import product1 from "../../assets/images/Prayagchai/prayagteaproduct.png";
+import product2 from "../../assets/images/Prayagilachi/ilachipng.png";
 import resimg from "../../assets/images/resbck.png";
 
 function Hero() {
+  const [currentProduct, setCurrentProduct] = useState(product1);
+
+  useEffect(() => {
+    // Toggle between product1 and product2 every 5 seconds
+    const productImages = [product1, product2];
+    let index = 0;
+
+    const interval = setInterval(() => {
+      index = (index + 1) % productImages.length;
+      setCurrentProduct(productImages[index]);
+    }, 5000);
+
+    // Clean up the interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="hero">
       {/* Left Side: Text Content */}
@@ -15,7 +33,7 @@ function Hero() {
           with every sip. Let each cup bring you closer to the harmony of
           Prayag.
         </p>
-        <button className="hero-button">Shop Know</button>
+        <button className="hero-button">Shop Now</button>
       </div>
 
       {/* Responsive: Single Image for Small Screens */}
@@ -23,14 +41,14 @@ function Hero() {
         <img src={resimg} alt="Responsive Background" />
       </div>
 
-      {/* Right Side: Image */}
+      {/* Right Side: Main Hero Image */}
       <div className="hero-image">
         <img src={img} alt="Prayag Tea" />
       </div>
 
       {/* Center Product Image */}
       <div className="productimg">
-        <img src={img2} alt="Prayag Tea Products" />
+        <img src={currentProduct} alt="Prayag Tea Products" />
       </div>
     </div>
   );

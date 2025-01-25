@@ -27,7 +27,7 @@ const PrayagchaiDetails = () => {
   };
 
   return (
-    <div className="prayagchai-container">
+    <div className="prayagchai-container" data-aos="fade-up">
       {/* Decorative Leaf Images */}
       <img src={leaf1} alt="Decorative Leaf 1" className="leaf leaf-top-left" />
       <img

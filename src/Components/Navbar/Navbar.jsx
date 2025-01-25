@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar-container">
+    <nav className="navbar-container" data-aos="fade-up">
       {/* Logo Section */}
       <div className="logo">
         <img src={logo} alt="Prayag Tea Logo" />
