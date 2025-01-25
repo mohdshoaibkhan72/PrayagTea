@@ -3,19 +3,19 @@ import "./Whychoseus.css"; // Import the CSS file for styling
 
 const WhyChooseUs = () => {
   return (
-    <div
-      className="why-choose-us-container"
-      data-aos="fade-up"
-      data-aos-offset="100"
-      data-aos-delay="25"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center"
-    >
+    <div className="why-choose-us-container">
       <h2 className="section-title">Why Choose Us?</h2>
-      <div className="sections-container">
+      <div
+        className="sections-container"
+        data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-delay="25"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         {/* Prayag Tea Section */}
         <div className="section-card prayag-tea">
           <h3 className="section-heading">Prayag Tea</h3>

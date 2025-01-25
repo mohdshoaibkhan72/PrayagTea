@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/HeroSections/Hero";
@@ -10,21 +11,37 @@ import WhyChooseUs from "./Components/Whychoseus/Whychoseus";
 import Videos from "./Components/videos/Videos";
 import CustomerReviews from "./Components/CustomorReviews/CustomerReviews";
 import Footer from "./Components/Footer/Footer";
+import ProductDetails from "./Components/ProductsDetails/ProductDetails";
+import ContactUs from "./Components/Contactus/Contactus";
+
 function App() {
   return (
-    <>
-      <Navbar></Navbar>
-      <Hero></Hero>
-      <About></About>
-      <ProductShowcase></ProductShowcase>
-      <PrayagchaiDetails></PrayagchaiDetails>
-      <Banner></Banner>
-      <Prayagilaci></Prayagilaci>
-      <WhyChooseUs></WhyChooseUs>
-      <Videos></Videos>
-      <CustomerReviews></CustomerReviews>
-      <Footer></Footer>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <ProductShowcase />
+              <PrayagchaiDetails />
+              <Banner />
+              <Prayagilaci />
+              <WhyChooseUs />
+              <Videos />
+              <CustomerReviews />
+            </>
+          }
+        />
+
+        <Route path="/product-details" element={<ProductDetails />} />
+        <Route path="/aboutus" element={<About />} />
+        <Route path="/contacus" element={<ContactUs />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

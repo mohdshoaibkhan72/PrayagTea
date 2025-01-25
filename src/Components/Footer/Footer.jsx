@@ -47,9 +47,9 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="footer" data-aos="fade-up">
-        <div className="footer-container">
-          <div className="footer-section">
+      <footer className="footer">
+        <div className="footer-container " data-aos="fade-up">
+          <div className="footer-section ">
             <img src={logo} alt="Company Logo" className="footer-logo" />
           </div>
 
@@ -61,18 +61,21 @@ const Footer = () => {
           {/* Contact Section */}
           <div className="footer-section">
             <h3 className="footer-heading">Get in Touch</h3>
-            <p>phulpur prayagraj 212402 Uttar pradesh</p>
+            <p>42-Purushottumpur,Mugarson,Parayageaj 221505 UP India</p>
             <p>
               Email: <a href="prayagtea873@gmail.com">prayagtea873@gmail.com</a>
             </p>
             <p>
               Need help? Call us:
-              <a href="tel:+14065550120">(+91) 9956875067</a>
+              <a href="tel:+14065550120">(+91) 9956875067 , </a>
+            </p>
+            <p>
+              <a href="tel:+8090503306">8090503306 </a>
             </p>
           </div>
         </div>
       </footer>
-      <div className="paymnt">
+      <div className="paymnt" data-aos="fade-up">
         PAYMENT WE ACCEPT
         <img src={paymntpng} alt="payment image" />
       </div>

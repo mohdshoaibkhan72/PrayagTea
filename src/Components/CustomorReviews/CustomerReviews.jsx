@@ -95,9 +95,9 @@ const CustomerReviews = () => {
   };
 
   return (
-    <div className="slider-container" data-aos="fade-up">
-      <h1>Customer Reviews</h1>
-      <div className="slider">
+    <div className="slider-container">
+      <h1 data-aos="fade-up">Customer Reviews</h1>
+      <div className="slider" data-aos="fade-up">
         <div
           className="slider-track"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}

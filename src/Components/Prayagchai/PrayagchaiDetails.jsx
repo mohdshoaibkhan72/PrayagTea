@@ -27,16 +27,29 @@ const PrayagchaiDetails = () => {
   };
 
   return (
-    <div className="prayagchai-container" data-aos="fade-up">
+    <div className="prayagchai-container">
       {/* Decorative Leaf Images */}
-      <img src={leaf1} alt="Decorative Leaf 1" className="leaf leaf-top-left" />
+      <img
+        src={leaf1}
+        alt="Decorative Leaf 1"
+        className="leaf leaf-top-left"
+        data-aos="fade-left"
+        data-aos-offset="100"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      />
       <img
         src={leaf2}
         alt="Decorative Leaf 2"
         className="leaf leaf-bottom-right"
+        data-aos="fade-right"
       />
 
-      <div className="prayagchai-content">
+      <div className="prayagchai-content" data-aos="fade-right">
         {/* Slider Section */}
         <div className="prayagchai-slider">
           <div
@@ -71,7 +84,7 @@ const PrayagchaiDetails = () => {
         </div>
 
         {/* Description Section */}
-        <div className="prayagchai-description">
+        <div className="prayagchai-description" data-aos="fade-left">
           <h1>Prayagchai: Har Ghoot Me Sangum</h1>
           <p className="intro-text">
             Discover the perfect blend of tradition, flavor, and comfort in

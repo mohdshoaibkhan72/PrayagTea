@@ -25,7 +25,7 @@ function Hero() {
   return (
     <div className="hero">
       {/* Left Side: Text Content */}
-      <div className="hero-contents">
+      <div className="hero-contents" data-aos="fade-up">
         <h1 className="hero-title">Prayag Tea</h1>
         <p className="hero-subtitle">हर घूंट में संगम</p>
         <p className="hero-description">
@@ -37,7 +37,7 @@ function Hero() {
       </div>
 
       {/* Responsive: Single Image for Small Screens */}
-      <div className="hero-responsive-image">
+      <div className="hero-responsive-image" data-aos="fade-up">
         <img src={resimg} alt="Responsive Background" />
       </div>
 
