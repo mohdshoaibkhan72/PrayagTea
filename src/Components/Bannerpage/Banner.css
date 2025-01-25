@@ -14,7 +14,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box-shadow */
+  transition: box-shadow 0.3s ease-in-out, transform 0.5s ease-in-out; /* Add transition for scaling */
 }
 
 .banner-container::before {
@@ -26,7 +26,7 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url("../../assets/images/bannerimg.jpg");
+  background-image: url("../../assets/images/bannerimg.jpg"); /* Adjust path if needed */
   transition: transform 0.5s ease-in-out;
   z-index: 0;
 }
@@ -37,6 +37,7 @@
 
 .banner-container:hover {
   box-shadow: inset 0 12px 24px rgba(0, 0, 0, 0.3); /* Internal shadow on hover */
+  transform: translateY(-5px); /* Optional slight lift effect on hover */
 }
 
 .banner-text {

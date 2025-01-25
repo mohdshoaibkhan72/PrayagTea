@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/images/prayagLogo1.jpg";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom for navigation
+import { Link, useNavigate } from "react-router-dom"; // useNavigate for programmatic navigation
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Products", path: "/product-details" },
-    { name: "About", path: "/aboutus" },
-    { name: "Contact", path: "/contacus" },
+    { name: "About", path: "/about-us" },
+    { name: "Contact", path: "/contact-us" },
   ];
+
+  const navigate = useNavigate(); // Hook for navigation
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -19,6 +21,17 @@ function Navbar() {
   // Close the menu after a link is clicked
   const closeMenu = () => {
     setMenuOpen(false);
+  };
+
+  // Logic for icons
+  const handlePhoneClick = () => {
+    // Opens phone dialer with predefined number
+    window.location.href = "tel:+919956875067"; // Replace with actual phone number
+  };
+
+  const handleEmailClick = () => {
+    // Opens the default email client
+    window.location.href = "mailto:prayagtea873@gmail.com"; // Replace with actual email address
   };
 
   return (
@@ -44,8 +57,14 @@ function Navbar() {
         ))}
       </ul>
 
-      {/* Contact Button (Desktop Only) */}
-      <button className="contact-button">Get In Touch</button>
+      <div className="contact-icons">
+        <button className="contact-button" onClick={handlePhoneClick}>
+          <i className="fas fa-phone-alt"></i> {/* Phone Icon */}
+        </button>
+        <button className="contact-button" onClick={handleEmailClick}>
+          <i className="fas fa-envelope"></i> {/* Email Icon */}
+        </button>
+      </div>
     </nav>
   );
 }

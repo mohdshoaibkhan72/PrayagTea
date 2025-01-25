@@ -1,45 +1,66 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Suspense, lazy } from "react";
+
+// Components
 import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/HeroSections/Hero";
-import About from "./Components/Aboutus/Aboutus";
-import ProductShowcase from "./Components/Products/ProductShowcase";
-import Banner from "./Components/Bannerpage/Banner";
-import PrayagchaiDetails from "./Components/Prayagchai/PrayagchaiDetails";
-import Prayagilaci from "./Components/prayagilachi/prayiagilachi";
-import WhyChooseUs from "./Components/Whychoseus/Whychoseus";
-import Videos from "./Components/videos/Videos";
-import CustomerReviews from "./Components/CustomorReviews/CustomerReviews";
 import Footer from "./Components/Footer/Footer";
-import ProductDetails from "./Components/ProductsDetails/ProductDetails";
-import ContactUs from "./Components/Contactus/Contactus";
+import PageNotFound from "./Components/Pagenotfound/Pagenotfound";
+
+// Lazy load other components for better performance
+const Hero = lazy(() => import("./Components/HeroSections/Hero"));
+const About = lazy(() => import("./Components/Aboutus/Aboutus"));
+const ProductShowcase = lazy(() =>
+  import("./Components/Products/ProductShowcase")
+);
+const Banner = lazy(() => import("./Components/Bannerpage/Banner"));
+const PrayagchaiDetails = lazy(() =>
+  import("./Components/Prayagchai/PrayagchaiDetails")
+);
+const Prayagilaci = lazy(() =>
+  import("./Components/prayagilachi/prayiagilachi")
+);
+const WhyChooseUs = lazy(() => import("./Components/Whychoseus/Whychoseus"));
+const Videos = lazy(() => import("./Components/videos/Videos"));
+const CustomerReviews = lazy(() =>
+  import("./Components/CustomorReviews/CustomerReviews")
+);
+const ProductDetails = lazy(() =>
+  import("./Components/ProductsDetails/ProductDetails")
+);
+const ContactUs = lazy(() => import("./Components/Contactus/Contactus"));
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <About />
-              <ProductShowcase />
-              <PrayagchaiDetails />
-              <Banner />
-              <Prayagilaci />
-              <WhyChooseUs />
-              <Videos />
-              <CustomerReviews />
-            </>
-          }
-        />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <ProductShowcase />
+                <PrayagchaiDetails />
+                <Banner />
+                <Prayagilaci />
+                <WhyChooseUs />
+                <Videos />
+                <CustomerReviews />
+              </>
+            }
+          />
+          <Route path="/product-details" element={<ProductDetails />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/page-not-found" element={<PageNotFound />} />
 
-        <Route path="/product-details" element={<ProductDetails />} />
-        <Route path="/aboutus" element={<About />} />
-        <Route path="/contacus" element={<ContactUs />} />
-      </Routes>
+          {/* Catch-all route for undefined paths */}
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </Router>
   );

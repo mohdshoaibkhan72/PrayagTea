@@ -66,8 +66,15 @@
   cursor: pointer;
   color: #333;
   z-index: 100;
+  position: absolute;
+  top: 15px; /* Adjust the distance from the top */
+  right: 30px; /* Position it at the right corner */
   transition: transform 0.3s ease;
-} /* Mobile Menu */
+}
+.contact-icons button {
+  margin: 5px;
+}
+/* Mobile Menu */
 .navbar-links.active {
   display: flex;
   flex-direction: column;

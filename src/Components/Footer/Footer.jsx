@@ -20,29 +20,29 @@ const FooterSection = ({ heading, links }) => (
 const Footer = () => {
   // Data for the footer sections
   const companyLinks = [
-    { href: "#", text: "FAQs" },
-    { href: "#", text: "Quality" },
-    { href: "#", text: "Gift Cards" },
-    { href: "#", text: "Contact" },
-    { href: "#", text: "Shop" },
+    { href: "/page-not-found", text: "FAQs" },
+    { href: "/page-not-found", text: "Quality" },
+    { href: "/page-not-found", text: "Gift Cards" },
+    { href: "/contact-us", text: "Contact" },
+    { href: "/page-not-found", text: "Shop" },
   ];
 
   const shopLinks = [
-    { href: "#", text: "Loose Leaf Tea" },
-    { href: "#", text: "Green Teas" },
-    { href: "#", text: "Packaged Teas" },
-    { href: "#", text: "Teaware" },
-    { href: "#", text: "Tea Gifts" },
-    { href: "#", text: "Iced Tea" },
+    { href: "/page-not-found", text: "Loose Leaf Tea" },
+    { href: "/page-not-found", text: "Green Teas" },
+    { href: "/page-not-found", text: "Packaged Teas" },
+    { href: "/page-not-found", text: "Teaware" },
+    { href: "/page-not-found", text: "Tea Gifts" },
+    { href: "/page-not-found", text: "Iced Tea" },
   ];
 
   const helpCenterLinks = [
-    { href: "#", text: "Delivery Information" },
-    { href: "#", text: "Terms & Conditions" },
-    { href: "#", text: "Returns & Refunds" },
-    { href: "#", text: "Privacy Notice" },
-    { href: "#", text: "Shopping" },
-    { href: "#", text: "FAQs" },
+    { href: "/page-not-found", text: "Delivery Information" },
+    { href: "/page-not-found", text: "Terms & Conditions" },
+    { href: "/page-not-found", text: "Returns & Refunds" },
+    { href: "/page-not-found", text: "Privacy Notice" },
+    { href: "/page-not-found", text: "Shopping" },
+    { href: "/page-not-found", text: "FAQs" },
   ];
 
   return (

@@ -10,15 +10,17 @@ const ProductShowcase = () => {
     {
       id: 1,
       name: "Prayag Tea",
-      price: "$150-$199",
+      price: "₹340",
       image: product1,
       hoverImage: hover1,
+      weight: "1Kg",
       rating: 4, // Star rating out of 5
     },
     {
       id: 2,
       name: "Prayag Ilachi Tea",
-      price: "$150-$199",
+      price: "₹320",
+      weight: "1Kg",
       image: product2,
       hoverImage: hover2,
       rating: 5,
@@ -29,7 +31,7 @@ const ProductShowcase = () => {
     <div className="product-container" data-aos="fade-up">
       <div className="left">
         <h1>Explore Our Seasonal Favourites</h1>
-        <a href="#">View All Products</a>
+        <a href="/product-details">View All Products</a>
         <div className="navigation-buttons">
           <button className="nav-button">{"<"}</button>
           <button className="nav-button">{">"}</button>
@@ -67,6 +69,7 @@ const ProductCard = ({ product }) => {
         </div>
         <h2>{product.name}</h2>
         <span className="product-price">{product.price}</span>
+        <span className="product-price">{product.weight}</span>
         <i className="fas fa-shopping-bag product-bag"></i> {/* Bag icon */}
       </div>
     </div>
