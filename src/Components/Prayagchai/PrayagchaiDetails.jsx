@@ -28,7 +28,6 @@ const PrayagchaiDetails = () => {
 
   return (
     <div className="prayagchai-container">
-      {/* Decorative Leaf Images */}
       <img
         src={leaf1}
         alt="Decorative Leaf 1"
@@ -50,7 +49,6 @@ const PrayagchaiDetails = () => {
       />
 
       <div className="prayagchai-content" data-aos="fade-right">
-        {/* Slider Section */}
         <div className="prayagchai-slider">
           <div
             className="prayagchai-slider-wrapper"
