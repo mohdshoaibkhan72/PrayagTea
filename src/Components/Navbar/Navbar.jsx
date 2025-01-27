@@ -59,10 +59,10 @@ function Navbar() {
 
       <div className="contact-icons">
         <button className="contact-button" onClick={handlePhoneClick}>
-          <i className="fas fa-phone-alt"></i> {/* Phone Icon */}
+          <i className="fab fa-whatsapp"></i>
         </button>
         <button className="contact-button" onClick={handleEmailClick}>
-          <i className="fas fa-envelope"></i> {/* Email Icon */}
+          <i className="fas fa-envelope"></i>
         </button>
       </div>
     </nav>
