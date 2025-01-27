@@ -61,7 +61,7 @@ const Footer = () => {
           {/* Contact Section */}
           <div className="footer-section">
             <h3 className="footer-heading">Get in Touch</h3>
-            <p>42-Purushottumpur,Mugarson,Parayageaj 221505 UP India</p>
+            <p>42-Purushottumpur,Mugarson,Parayagraj 221505 UP India</p>
             <p>
               Email: <a href="prayagtea873@gmail.com">prayagtea873@gmail.com</a>
             </p>

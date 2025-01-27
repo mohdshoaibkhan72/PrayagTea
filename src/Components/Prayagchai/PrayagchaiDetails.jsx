@@ -83,7 +83,7 @@ const PrayagchaiDetails = () => {
 
         {/* Description Section */}
         <div className="prayagchai-description" data-aos="fade-left">
-          <h1>Prayagchai: Har Ghoot Me Sangum</h1>
+          <h1>Prayagchai: Har Ghoot Me Sangam </h1>
           <p className="intro-text">
             Discover the perfect blend of tradition, flavor, and comfort in
             every sip.
