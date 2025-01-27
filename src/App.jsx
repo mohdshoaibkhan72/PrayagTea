@@ -58,7 +58,7 @@ function App() {
           <Route path="/page-not-found" element={<PageNotFound />} />
 
           {/* Catch-all route for undefined paths */}
-          <Route path="*" element={<PageNotFound />} />
+          <Route path="/page-not-found" element={<PageNotFound />} />
         </Routes>
       </Suspense>
       <Footer />
