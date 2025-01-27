@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Suspense, lazy } from "react";
 
@@ -34,7 +34,13 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="loading-container">
+            <div className="spinner"></div>
+          </div>
+        }
+      >
         <Routes>
           <Route
             path="/"
@@ -55,10 +61,8 @@ function App() {
           <Route path="/product-details" element={<ProductDetails />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/page-not-found" element={<PageNotFound />} />
-
-          {/* Catch-all route for undefined paths */}
-          <Route path="/page-not-found" element={<PageNotFound />} />
+          {/* Page Not Found Route */}
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Suspense>
       <Footer />
